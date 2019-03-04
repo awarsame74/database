@@ -1,0 +1,28 @@
+sqlStuff= "INSERT INTO customer(firstname, lastname, birth_date, age, gender, occupation, city, country, username, email, password, phone) VALUES ( %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+
+record1= [ ("Terry", "James", "13/02/2000", 19, "male", "Student", "London", "England", "TJames", "TJ1@email.com","myword44", "075339876549"),
+           ("Arnold", "Joshua", "02/04/1986", 32, "male", "Data Analyst", "Frankfurt","Germany", "AJoshua", "AJ2@email.com", "thisisbe43","07536723425"),
+           ("Robert", "Miller", "03/07/1990", 29, "male", "Software Egnineer", "Birmingham", "England", "RMiller", "RM3@email.com", "themanthey5", "074339876547"),
+           ("Jane", "Tomas", "04/05/1997", 21, "female", "Student", "Amsterdam", "Netherlands","JTomas", "JT4@email.com", "yolomomo78", "071236877522"),
+           ("Zayn", "Ahmad", "23/06/1996", 22, "male", "Student", "London","England","ZAhmad","ZA5@email.com", "killthat445", "075639676745"),
+           ("Sara", "John", "28/11/2001", 18, "female", "Student", "Dallas","USA", "SJohn", "SJ6@email.com", "nowayman66", "075837856543"),
+           ("Alex", "Tim", "05/09/1994", 24, "female", "Athlete", "London","England", "ATim", "AT7@email.com", "oybrothat55", "076549876533"),
+           ("Jerry", "Smith", "12/03/1995", 23, "male", "Student", "Leeds","England", "JSmith", "JS8@email.com", "nononthatre43", "075736876563"),
+           ("Mohammed", "Sayid", "19/01/1992", 26, "male", "Athlete", "Dubai", "UAE", "MSayid","MS9@email.com", "byhynu65", "077839876544"),
+           ("Johnson", "Harold", "17/02/2000", 19, "male", "Student", "Berlin", "Germany", "JHarold", "JH10@email.com", "metheman66", "075669876523"),
+           ("Harry", "Andres", "24/08/1998", 20, "male", "Student", "Liverpool","England", "HAndres", "HA11@email.com", "halaga44", "075619876565"),
+           ("Dan", "Warock", "13/10/1993", 25, "male", "Athlete", "New York","USA", "DWarock", "DW12@email.com", "themythofthemyth456", "075339876532"),
+           ("Ann", "Davids", "20/12/2000", 18, "female", "Student", "London", "England", "ADavids", "AD13@email.com", "humanintelligence27", "0756579876539"),
+           ("Peter", "King", "21/02/1991", 28, "male", "Manager", "Norwich","England", "PKing", "PK14@email.com", "genomeexcentre19", "075339877934"),
+           ("Becky", "Fabian", "26/11/2000", 18, "female", "Student", "Coventry","England", "BFabian", "BF15@email.com", "belfastcount56", "07533987889"),
+           ("Carlos", "Sanchez", "12/04/1992", 27, "male", "Athlete", "Monterrey","Mexico", "CSanchez", "CS16@email.com", "nowaytumour90", "075339876743"),
+           ("Samina", "Fahad", "10/03/1996", 22, "female", "Student", "London","England", "SFahad", "SF17@email.com", "fabulousnight78", "075339876331"),
+           ("Garoth", "Ronald", "11/05/1987", 31, "male", "Student", "Swansea","Wales", "GRonald", "GR18@email.com", "humanfisherman67", "0753398765765"),
+           ("James", "Peterson", "04/06/1990", 28, "male", "Athelete", "London","England", "JPeterson", "JP19@email.com", "youllneverguess51", "075339876549"),
+           ("Arjun", "Pajit", "09/09/1994", 25, "male", "Clerk", "New Delhi", "India", "APajit", "AP20@email.com", "halloffame21", "075339876549"),
+           ]
+
+
+
+#my_cursor.executemany(sqlStuff, record1)
+#mydb.commit()
