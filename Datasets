@@ -26,3 +26,33 @@ record1= [ ("Terry", "James", "13/02/2000", 19, "male", "Student", "London", "En
 
 #my_cursor.executemany(sqlStuff, record1)
 #mydb.commit()
+
+#Create Purchase Table
+#my_cursor.execute ("CREATE TABLE purchase (paymentid VARCHAR(255) PRIMARY KEY, uid INTEGER, productid VARCHAR(10), date VARCHAR(15), time VARCHAR(10), cardholder_name VARCHAR(255), cardnumber VARCHAR(40), expirydate VARCHAR(30))")
+
+sqlStuff= "INSERT INTO purchase(paymentid, uid,productid,date, time, cardholder_name, cardnumber, expirydate) VALUES (%s, %s,%s, %s, %s, %s, %s, %s)"
+
+record2= [ ("B21", 21, "A110","01/Feb/2019", "12:03","Terry", "443294774083456", "10/Mar/22" ),
+           ("B22", 22, "A110","02/Feb/2019", "09:16","Arnold", "434594774083365", "02/Apr/21" ),
+           ("B23", 23, "A110","02/Feb/2019", "11:25","Robert", "450094774089834", "11/Sep/21" ),
+           ("B24", 24, "A110","02/Feb/2019", "15:17","Jane", "456794774082128", "19/Dec/22" ), 
+           ("B25", 25, "A110","04/Feb/2019", "11:45","Zayn", "454494774088719", "13/Aug/23" ), 
+           ("B26", 26, "A110","04/Feb/2019", "19:34","Sara", "453294774080989", "26/Oct/23" ), 
+           ("B27", 27, "A110","06/Feb/2019", "10:26","Alex", "457594774088764", "07/Oct/22" ), 
+           ("B28", 28, "A110","07/Feb/2019", "21:52","Jerry", "454094774084232", "20/Feb/21" ), 
+           ("B29", 29, "A110","08/Feb/2019", "13:19","Mohammed", "450594774080987", "31/Jan/21" ), 
+           ("B30", 30, "A110","11/Feb/2019", "17:08","Johnson", "45069477406543", "23/Jun/21" ), 
+           ("B31", 31, "A110","11/Feb/2019", "19:09","Harry", "4559477402986", "16/Sep/21" ), 
+           ("B32", 32, "A110","01/Feb/2019", "12:03","Dan", "455794774013596", "18/Aug/21" ),
+           ("B33", 33, "A110","02/Feb/2019", "09:16","Ann", "4578947740227564", "17/Dec/23" ),
+           ("B34", 34, "A110","02/Feb/2019", "15:17","Peter", "46294774082389", "02/Nov/24" ), 
+           ("B35", 35, "A110","04/Feb/2019", "11:45","Becky", "454594774078906", "11/Jul/23" ), 
+           ("B36", 36, "A110","04/Feb/2019", "19:34","Carlos", "458994774212423", "19/Feb/22" ), 
+           ("B37", 37, "A110","06/Feb/2019", "10:26","Samina", "457694774086654", "13/Dec/21" ), 
+           ("B38", 38, "A110","07/Feb/2019", "21:52","Garoth", "455394774089583", "03/Feb/21" ), 
+           ("B39", 39, "A110","08/Feb/2019", "13:19","James", "456594774082123", "09/Nov/22" ), 
+           ("B40", 40, "A110","11/Feb/2019", "17:08","Arjun", "457694774087562", "14/Sep/23" ), 
+         ]
+
+#my_cursor.executemany(sqlStuff, record2)
+#mydb.commit()
